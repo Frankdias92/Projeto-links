@@ -35,6 +35,8 @@ background-size: cover;
 */
 
   background: var(--bg-url) no-repeat top center/cover;
+
+  height: 100vh;
 }
 body * {
   font-family: Inter;
@@ -172,3 +174,14 @@ footer {
   font-size: 14px;
 }
 
+
+/* media query */
+@media (min-width: 700px) {
+  :root {
+    --bg-url: url(./assets/bg-desktop.jpg)
+  }
+
+  .lightbox {
+    --bg-url: url(./assets/bg-desktop-light.jpg)
+  }
+}
