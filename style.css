@@ -1,3 +1,6 @@
+@import url("https://fonts.googleapis.com/css?family=Heebo:900&display=swap");
+
+
 * {
   margin: 0;
   padding: 0;
@@ -59,6 +62,27 @@ section {
 
 #profile {
   padding: 24px;
+}
+
+section .wave {
+  display: flex;
+  justify-content: center;
+  padding-top: 24px;
+  align-items: center;
+  gap: 10px;
+}
+section p {
+}
+
+section wave p {
+  position: relative;
+}
+
+.hello {
+  justify-content: center;
+  font-size: 30px;
+  transform-origin: 60% 90%;
+  animation:  wave .5s 300ms  steps(6, end)  alternate infinite;
 }
 
 #profile img {
@@ -205,5 +229,13 @@ footer {
     left: 50%;
   } to {
     left: 0;
+  }
+}
+
+@keyframes wave {
+  from {
+transform: rotate(-15deg);
+  } to {
+    transform: rotate(0deg);
   }
 }
